@@ -1,0 +1,353 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    --color-strong-cyan: #26baa4;
+    --color-light-blue: #6173ff;
+    --color-dark-greyish-blue: #4c545d;
+    --color-greyish-blue: #9fabb2;
+}
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+    line-height:1.6;
+}
+header{
+    padding-top:5em;
+    padding-bottom:2rem;
+    background-image: url(images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+.container{
+    padding:0 1.875rem;
+    text-align: center;
+}
+.header-content-wrapper{
+    padding:2rem 0;
+}
+.title{
+    font-size:1.85rem;
+}
+h1,h2,h3{
+    margin:0.8em 0;
+    line-height:1.3;
+    color:var(--color-dark-greyish-blue);
+}
+h2{
+    font-size:1.6875rem;
+}
+h3{
+    font-size:1.375rem;
+}
+p{
+    color:var(--color-greyish-blue);
+    margin: 0.75rem auto;
+}
+.header-intro{
+    max-width:30rem;
+}
+.btn{
+    display: block;
+    margin: 1.125rem auto;
+    border: none;
+    border-bottom: 0.1875rem solid;
+    border-radius: 5em;
+    cursor: pointer;
+    padding: 0.875rem 0;
+    width: 100%;
+    max-width: 18.75rem;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+.btn-ios{
+    background-color:var(--color-strong-cyan);
+    box-shadow:0 0.625rem 1.25rem rgb(38 186 164 / 25%);
+    border-bottom-color: #1e9583;
+}
+.btn-mac{
+    background-color:var(--color-light-blue);
+    box-shadow:0 0.625rem 1.25rem rgb(97 115 255 / 25%);
+    border-bottom-color: #4e5ccc;
+}
+a{
+    text-decoration:none;
+    color:white;
+    position:relative;
+}
+section{
+    padding:4rem 0 0 0;
+}
+.keep-track-items{
+    margin-top:3.5em;
+}
+.device-images{
+    max-width:100%;
+    height:auto;
+}
+ul{
+    list-style-type:none;
+}
+.keep-track-lists{
+    padding:2.5rem 0 0 0;
+}
+.ipad-images{
+    margin-top:3.75em;
+    max-width:100%;
+    height:auto;
+}
+.supercharge-lists{
+    padding:2.5rem 0 0 0;
+}
+.supercharge-images{
+    padding:1em 0;
+}
+.companies .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+}
+.companies-logo{
+    padding:1em 0;
+}
+.download-paragraph{
+    padding:0.75rem 0rem 1.5rem;
+    max-width:35rem;
+}
+.section-description{
+    max-width:35rem;
+}
+footer{
+    margin-top: 7rem;
+    background-color:black;
+    padding: 3.75rem 0;
+    text-align: center;
+}
+.footer-logo{
+    margin-bottom: 1.25rem;
+    height: 3.75rem;
+    width: 3.75rem;
+}
+.footer-item{
+    font-size:1.125rem;
+    margin:1em 0;
+}
+.icons{
+    padding:1em 0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+}
+.icons li{
+    margin-right:5px;
+}
+.icons li:hover svg * {
+    cursor:pointer;
+    fill:var(--color-strong-cyan);
+}
+.attribution{
+    margin-top:2rem;
+    background-color:black;
+}
+
+@media screen and (min-width: 800px) {
+    header{
+        padding-top:7em;
+        padding-bottom:4rem;
+        background-image: url(images/bg-header-desktop.png);
+        background-repeat: no-repeat;
+        background-size:100%;
+    }
+    .btn {
+        display: inline-block;
+        max-width: 15rem;
+        margin:1rem;
+    }
+    .btn--ios {
+        margin-right: 1.125rem;
+    }
+    .section-description{
+        font-size:1.125rem;
+        min-width:35rem;
+    }
+    .header-intro{
+        font-size:1.125rem;
+    }
+    .list-description{
+        font-size: 1rem;
+        max-width:20rem;
+    }
+    .supercharge-description{
+        max-width:20em;
+        font-size:1em;
+    }
+
+    .companies{
+        margin-top:4em;
+    }
+    .title{
+        font-size:2.8125rem;
+    }
+    h2{
+        font-size:2.25rem;
+    }
+    h3{
+        font-size:1.5rem;
+    }
+    .attribution{
+        font-size:1rem;
+    } 
+    .footer-link::after{
+        content:"";
+        display:block;
+        position:absolute;
+        left:0;
+        bottom:0;
+        height:2px;
+        width:100%;
+        background:var(--color-strong-cyan);
+        transform:scaleX(0);
+        transform-origin:right;
+        transition: transform 300ms ease-in;    
+    }
+    .footer-link:hover{
+        color:var(--color-strong-cyan);
+    }
+    .footer-link:hover::after{
+        transform:scaleX(1);
+        transform-origin:left;
+    }
+    .attribution-link::after{
+        content:"";
+        display:block;
+        position:absolute;
+        left:0;
+        bottom:0;
+        height:2px;
+        width:100%;
+        background:var(--color-strong-cyan);
+        transform:scaleX(0);
+        transform-origin:right;
+        transition: transform 300ms ease-in; 
+    }
+    .attribution-link:hover{
+        color:var(--color-strong-cyan);
+    }
+    .attribution-link:hover::after{
+        transform:scaleX(1);
+        transform-origin:left;
+    }
+    .btn-ios:hover{
+        border-bottom-color: #26baa4;
+        background-color: #51c8b6;
+        transform: scale(0.99);
+    }
+    
+    .btn-mac:hover{
+        border-bottom-color: #6173ff;
+        background-color: #818fff;
+        transform: scale(0.99);
+    }
+
+}
+@media screen and (min-width: 1200px) {
+    header{
+        padding-top:8rem;
+        padding-bottom:5rem;
+    }
+    footer{
+        margin-top:10rem;
+        padding:3rem 0 2rem 0;
+    }
+    .btn{
+        max-width:18rem;
+        font-size:1.5rem;
+    }
+    .header-intro{
+        font-size: 1.125rem;
+        min-width:35rem;
+    }
+    .download-paragraph{
+        font-size: 1.125rem;
+        min-width:40rem;
+    }
+
+    .keep-track-items{
+        margin-top:5rem;
+        margin-bottom:4rem;
+        display: flex;
+        gap:3rem;
+        align-items:center;
+        max-width:75rem;
+    }
+    .device-images{
+        transform:translateX(-6vw);
+    }
+    .keep-track-lists{
+        text-align:left;
+        padding:3rem auto;
+    }
+    .section-description{
+        font-size: 1.125rem;
+        min-width:50rem;
+    }
+    .list-description{
+        font-size: 1rem;
+        min-width:20rem;
+    }
+    .supercharge-items{
+        display:flex;
+        justify-content: center;
+        gap:2em;
+        align-items:baseline;
+    }
+    .supercharge-lists{
+        padding:2.5rem;
+    }
+    .supercharge-description{
+        max-width:18em;
+        font-size:1rem;
+    }
+    .Acess{
+        margin-bottom:4em;
+    }
+    .companies{
+        margin:5em 0 5em 0;
+    }
+    .companies .container{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap:4rem;
+    }
+    footer .container{
+        display:grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        align-items:center;
+    }
+    .footer-list-items{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: left;
+    }
+    .footer-link{
+        font-size:1.125rem;
+    }
+    .attribution{
+        grid-column:3;
+        font-size:1.125rem;
+    }
+}
+@media screen and (min-width: 81.25em){
+.keep-track .container {
+    margin: 0 auto;
+    max-width: 75rem;
+}
+}
