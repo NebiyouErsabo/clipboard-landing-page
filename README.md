@@ -25,7 +25,7 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 
 ### Links
-- Live Site URL: 
+- Live Site URL: https://nebiyouersabo.github.io/clipboard-landing-page/
 
 ## My process
 
